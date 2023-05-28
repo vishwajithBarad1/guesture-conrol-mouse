@@ -66,9 +66,8 @@ Rn0=Rn1=Rn2=Rn3=0
 prevMidIndexPercXvalue=0
 prevMidIndexPercYvalue=0
 
-hold=0
-t=0.1
-st=2
+hold,t=0,0.1
+
 while(True):
     handDetected,indexDistance,midIndexPercXvalue,midIndexPercYvalue,middleDistance,midMiddlePercXvalue,midMiddlePercYvalue=frameOut()
     if(handDetected=="right"):
@@ -77,22 +76,18 @@ while(True):
         Rn3=int(middleDistance*10)
         if  0 in (Ln0,Ln1,Ln2,Ln3) and any([Ln0,Ln1,Ln2,Ln3]) and (Ln0!=0 and Ln3!=0):
                 mouse.click()
-                # print("Lclick",Ln0,Ln1,Ln2,Ln3)
                 Ln0=Ln1=Ln2=Ln3=9
                 t=0.1
         elif  0 in (Rn0,Rn1,Rn2,Rn3) and any([Rn0,Rn1,Rn2,Rn3]) and (Rn0!=0 and Rn3!=0):
                 mouse.rightClick()
-                # print("Rclick",Rn0,Rn1,Rn2,Rn3)
                 Rn0=Rn1=Rn2=Rn3=9
                 t=0.1
         #Left hold and right hold
         elif ("".join(map(str,(Ln0,Ln1,Ln2,Ln3)))=="0000"):
             mouse.moveRel(int((midIndexPercXvalue-prevMidIndexPercXvalue)*2560),int((midIndexPercYvalue-prevMidIndexPercYvalue)*1600))
-            # print("L-holded")
             t=0
         elif ("".join(map(str,(Rn0,Rn1,Rn2,Rn3)))=="0000"):
             mouse.dragRel(int((midIndexPercXvalue-prevMidIndexPercXvalue)*2560),int((midIndexPercYvalue-prevMidIndexPercYvalue)*1600))
-            # print("R-holded")
             t=0
         else:
              t=0.1
@@ -108,13 +103,11 @@ while(True):
         #left index click to click "left"
         if  0 in (Ln0,Ln1,Ln2,Ln3) and any([Ln0,Ln1,Ln2,Ln3]) and (Ln0!=0 and Ln3!=0):
                 mouse.press('left')
-                # print("Lclick",Ln0,Ln1,Ln2,Ln3)
                 Ln0=Ln1=Ln2=Ln3=9
                 t=0.1
         #left middle click to click "right"
         elif  0 in (Rn0,Rn1,Rn2,Rn3) and any([Rn0,Rn1,Rn2,Rn3]) and (Rn0!=0 and Rn3!=0):
                 mouse.press('right')
-                # print("Rclick",Rn0,Rn1,Rn2,Rn3)
                 Rn0=Rn1=Rn2=Rn3=9
                 t=0.1
         #hold down left index to increase or decrease volume.
@@ -122,7 +115,6 @@ while(True):
             if(hold<0):
                 VolumeAdj(midIndexPercYvalue)
                 hold=10
-                # print("L-holded")
             else:
                  hold-=1
             t=0
