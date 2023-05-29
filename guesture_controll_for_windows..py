@@ -66,7 +66,7 @@ Rn0=Rn1=Rn2=Rn3=0
 prevMidIndexPercXvalue=0
 prevMidIndexPercYvalue=0
 
-hold,t=0,0.1
+hold,t=0,1
 
 while(True):
     handDetected,indexDistance,midIndexPercXvalue,midIndexPercYvalue,middleDistance,midMiddlePercXvalue,midMiddlePercYvalue=frameOut()
@@ -124,5 +124,6 @@ while(True):
         prevMidIndexPercYvalue=midIndexPercYvalue
         Ln0,Ln1,Ln2=Ln1,Ln2,Ln3
         Rn0,Rn1,Rn2=Rn1,Rn2,Rn3
-    
+    else:
+         t=1
     time.sleep(t)
