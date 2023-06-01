@@ -17,10 +17,13 @@ Install libraries for the project using pip
 ```
     
 ## Demo
-bellow is the link to demo video
+bellow is the link to demo video and hand landmarks
 
-[![IMAGE ALT TEXT HERE](https://i.ibb.co/VLxD1BV/thumbnail.jpg)](https://youtu.be/smaINSCbzlw)
-[![Alt text](https://i.ibb.co/bRtcyJS/Screenshot-2023-05-26-020453.png)](https://i.ibb.co/bRtcyJS/Screenshot-2023-05-26-020453.png)
+
+[![IMAGE ALT TEXT HERE](https://gcdnb.pbrd.co/images/zl550ixEdnh2.png?o=1)](https://youtu.be/smaINSCbzlw)
+
+![Alt text](https://gcdnb.pbrd.co/images/YCDRRCPbbIBf.png?o=1)
+
 
 ## About this Project
 
