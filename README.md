@@ -19,7 +19,7 @@ Install libraries for the project using pip
 ## Demo
 bellow is the link to demo video
 
-[![IMAGE ALT TEXT HERE](https://i.ibb.co/VLxD1BV/thumbnail.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+[![IMAGE ALT TEXT HERE](https://i.ibb.co/VLxD1BV/thumbnail.jpg)](https://www.youtube.com/watch?v=pGNhi2MtKZ8)
 
 
 ## About this Project
