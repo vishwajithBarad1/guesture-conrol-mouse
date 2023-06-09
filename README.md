@@ -6,7 +6,7 @@ This program enables mouse control through hand gestures. It uses a webcam feed 
 
 ## Installation
 
-Install libraries for the project using pip and download appropriate python version(3.10.0) [here](https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe)
+download appropriate python version(3.10.0) [here](https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe) and Install libraries for the project using pip
 
 ```bash
   pip install cv2
